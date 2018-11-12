@@ -17,24 +17,32 @@ public class SubroutineMath {
     
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
+        
         System.out.println("What do you want to calculate?");
         System.out.println("Type a to calculate force");
         System.out.println("Type b to calculate gravitational potential energy");
+        System.out.println("Type c to hear a joke");
+        System.out.println("Type d to hear another joke");
+                
         System.out.println("______________________________________________________");
         String in = keyboard.nextLine();
-        switch(in){
-            case "a": case "A":
-                force();
-                break;
-            case "b": case "B":
-                gravitationalPotentialEnergy();
-                break;
-        }
         
-        
-        
-        System.out.println("Done");
-        
+            switch(in){
+                case "a": case "A":
+                    force();
+                    break;
+                case "b": case "B":
+                    gravitationalPotentialEnergy();
+                    break;
+                case "c": case"C":
+                    sevenEightNine();
+                    break;
+                case "d": case"D":
+                    xenophobia();
+              
+                    
+                    break;
+            }
         
     }
     
@@ -60,6 +68,14 @@ public class SubroutineMath {
         double Epot = m*g*h;
         System.out.println("Potential Energy:" + Epot);
         
+    }
+    public static void sevenEightNine(){
+        System.out.println("WHY WAS 6 AFRAID OF 7?");
+        System.out.println("BECAUSE 789 and was promply given a life scentence for cannabalism");
+    }
+    public static void xenophobia(){
+        System.out.println("WHY DID THE CHICKEN CROSS THE ROAD?");
+        System.out.println("to get away from the cops chasing him for breaking the window of a kfc");
     }
     
 }
